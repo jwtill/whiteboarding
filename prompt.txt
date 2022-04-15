@@ -1,11 +1,4 @@
-Courses
-Payments
-Payment methods
-Peer evaluations
-Profile
-Sign out 
-Functional Programming with JavaScript
-Project
+
 Whiteboarding Independent Project
 During your normally scheduled independent project time, you will prepare for your whiteboard interview session. 5 questions are included below for you to study and develop solutions for. At the time and date designated by your instructor, you will conduct your whiteboarding interview with a group of students. Your instructor will randomly assign you a question to whiteboard for your group, so make sure you are prepared to whiteboard each of the 5 questions.
 
@@ -48,6 +41,8 @@ Your project will be evaluated based on the following objectives:
 Whiteboard solution has been submitted.
 Whiteboard interview meets all requirements (based on peer feedback).
 Your evaluations for peers are complete and include constructive feedback.
+
+
 Questions
 Question #1: Turning Strings to URLs
 URLs cannot have spaces. Instead, all spaces in a string are replaced with %20. Write an algorithm that replaces all spaces in a string with %20.
