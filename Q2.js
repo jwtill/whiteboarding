@@ -8,15 +8,19 @@
 // Output: [7, 9, "hi", 12, 53]
 
 function removeDupl(arr) { //[1, 4, sandwich, 1]
-  result = []; 
+  let dups = []; 
+  
   for(let i = 0; i < arr.length; i++) { //loop 4 times
       for(let j = 0; j < arr.length; j++) {
-        if (arr[i] === arr[j+1]) {
-          result.push(arr[i]);
+       if (arr[i] === arr[j] && i != j) {
+          dups.push(arr[i]);       
+        }
+        else {
+          farts.push(arr[i]);
         }
       }
   }
-  return result;
+  return dups;
 }
 
 // function removeDupl(arr) {
