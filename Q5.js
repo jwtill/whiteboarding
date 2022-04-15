@@ -17,9 +17,10 @@
 
 function sortArray(input) {
   let output = [];
-  for(let i = 0; i<input.length; i++) {
+  let times = input.length;
+  for(let i = 0; i<times; i++) {
     output.push(Math.min(...input)); //add smallest
-    input.filter(e => e != (Math.min(...input))); //remove smallest from input
-    input.remove(Math.min(...input));
+    input = input.filter(e => e != (Math.min(...input))); //remove smallest from input
   }
+  return output;
 }
