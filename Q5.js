@@ -18,7 +18,8 @@
 function sortArray(input) {
   let output = [];
   for(let i = 0; i<input.length; i++) {
-    output.push(Math.min(...input));
-    input.filter(e => e != (Math.min(...input)));
+    output.push(Math.min(...input)); //add smallest
+    input.filter(e => e != (Math.min(...input))); //remove smallest from input
+    input.remove(Math.min(...input));
   }
 }

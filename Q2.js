@@ -10,10 +10,19 @@
 function removeDupl(arr) { //[1, 4, sandwich, 1]
   result = []; 
   for(let i = 0; i < arr.length; i++) { //loop 4 times
-      if (arr[0] != arr[i+1]) { //is 1 != 4, is 1 != sandwich, is 1 != 1, is 1 != undefined?
-        result.push(arr[i]); 
+      for(let j = 0; j < arr.length; j++) {
+        if (arr[i] === arr[j+1]) {
+          result.push(arr[i]);
+        }
       }
   }
   return result;
 }
 
+// function removeDupl(arr) {
+//   return arr.filter((i) => {
+//     for(let i = 0; i<arr.length; i++) {
+//       return 
+//     }
+//   });
+// }
