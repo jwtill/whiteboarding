@@ -12,6 +12,10 @@
 // Output: true
 
 function uniqueElement(str) {
+  
+}
+
+function uniqueElement(str) {
   return !/(.)\1/.test(str);
 }
 or 

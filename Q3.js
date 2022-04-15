@@ -7,6 +7,7 @@
 // Input: "aaabccdddda"
 
 // Output: "3ab2c4da"
+// while loop? split? splice?
 
 function compress(str) {
   arr = str.split("");
@@ -16,4 +17,12 @@ function compress(str) {
     }
   }
 
+}
+
+
+for (let i =0; i<frog.length; i++) {
+  if (frog[i] === frog[i+1]) {
+      counter ++;
+      dogs = counter + frog[i];
+  }
 }

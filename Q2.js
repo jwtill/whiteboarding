@@ -8,14 +8,27 @@
 // Output: [7, 9, "hi", 12, 53]
 
 function removeDupl(arr) { 
-  let unique = [];
+  if (typeof arr != "object") {
+    return 0;
+  }
+  let unique = []; //create empty array
   for (let i = 0; i < arr.length; i++) {
-    if (!unique.includes(arr[i])) {
+    if (!unique.includes(arr[i])) { //check to see if unique array does not include element in array, if that is the case, push it
       unique.push(arr[i]);
     }
   }
   return unique;
 }
+
+//with filter
+function removeDupl(arr) {
+  if(typeof arr != "object") {
+    return 0;
+  }
+  return arr.filter((elem, index) => 
+     arr.indexOf(elem) == index) //first time elem is encountered, elem should equal index, next time is encountered, index will be different
+  }
+
 
 // function removeDupl(arr) {
 //   return arr.filter((i) => {

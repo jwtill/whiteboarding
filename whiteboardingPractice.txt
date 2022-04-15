@@ -1,0 +1,16 @@
+// removes duplicates from an array
+// don't use filter
+// Input: ["",7, 9, "hi", 12, "hi", 7, 53]
+
+function removeDupl(arr) { //
+  if (typeof arr != "object") {
+    return 0;
+  }
+  let unique = [];
+  for(let i=0; i<arr.length; i++) { 
+    if(!unique.includes(arr[i])) { //[].include(7)(9)("hi")(12)("hi")(7)(53)
+      unique.push(arr[i]); //[7,9,"hi",12,53]
+    }
+  }
+  return unique;
+}
