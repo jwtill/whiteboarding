@@ -1,15 +1,24 @@
-Question #5: Array Sorting
-Write an algorithm that sorts an array without using the sort() method. There are many different sorting algorithms - take the time to read about the following:
+//! Question #5: Array Sorting
+// Write an algorithm that sorts an array without using the sort() method. There are many different sorting algorithms - take the time to read about the following:
 
-Quick sort
-Merge sort
-Heap sort
-Insertion sort
-Bubble sort
-Selection sort
-You may implement any of the above algorithms (or your own) to solve the problem - as long as it doesn't use sort().
+// Quick sort
+// Merge sort
+// Heap sort
+// Insertion sort
+// Bubble sort
+// Selection sort
 
-Example
-Input: [9, 2, 7, 12]
+// You may implement any of the above algorithms (or your own) to solve the problem - as long as it doesn't use sort().
 
-Output: [2, 7, 9, 12]
+// Example
+// Input: [9, 2, 7, 12]
+
+// Output: [2, 7, 9, 12]
+
+function sortArray(input) {
+  let output = [];
+  for(let i = 0; i<input.length; i++) {
+    output.push(Math.min(...input));
+    input.filter(e => e != (Math.min(...input)));
+  }
+}

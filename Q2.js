@@ -16,3 +16,4 @@ function removeDupl(arr) { //[1, 4, sandwich, 1]
   }
   return result;
 }
+

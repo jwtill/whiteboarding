@@ -14,5 +14,9 @@
 function uniqueElement(str) {
   return !/(.)\1/.test(str);
 }
+or 
+function uniqueElement(str) {
+  return str.includes("aa" etc)
+}
 
 //regex expression checks to see if any element is repeadted, returns true if so, then ! makes that false
