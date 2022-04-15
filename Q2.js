@@ -7,20 +7,14 @@
 
 // Output: [7, 9, "hi", 12, 53]
 
-function removeDupl(arr) { //[1, 4, sandwich, 1]
-  let dups = []; 
-  
-  for(let i = 0; i < arr.length; i++) { //loop 4 times
-      for(let j = 0; j < arr.length; j++) {
-       if (arr[i] === arr[j] && i != j) {
-          dups.push(arr[i]);       
-        }
-        else {
-          farts.push(arr[i]);
-        }
-      }
+function removeDupl(arr) { 
+  let unique = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (!unique.includes(arr[i])) {
+      unique.push(arr[i]);
+    }
   }
-  return dups;
+  return unique;
 }
 
 // function removeDupl(arr) {
